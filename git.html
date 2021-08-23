@@ -1,0 +1,358 @@
+
+<!DOCTYPE HTML>
+<html lang="pt" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Git · Manual GNU/Linux</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="glossario.html" />
+    
+    
+    <link rel="prev" href="introducao.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Manual de versionamento de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introducao.html">
+            
+                <a href="introducao.html">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="glossario.html">
+            
+                <a href="glossario.html">
+            
+                    
+                    Glossário
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="bibliografia.html">
+            
+                <a href="bibliografia.html">
+            
+                    
+                    Bibliografia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Git</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="o-que-&#xE9;-git">O que &#xE9; Git?</h1>
+<p>O Git &#xE9; um <em>DVSC</em> <em>Open Source</em> criado em 2005 por Linus Torvalds. Hoje o Git &#xE9; o <em>VSC</em> mais utilizado no mundo. </p>
+<h2 id="instala&#xE7;&#xE3;o-do-git">Instala&#xE7;&#xE3;o do Git</h2>
+<p>O Git est&#xE1; dispon&#xED;vel para os tr&#xEA;s principais sistemas operacionais utilizados em <em>desktops</em> e <em>notebooks</em> &#x2014; GNU/Linux, Windows e MacOS. O tutorial de instala&#xE7;&#xE3;o para todos os  sistemas operacionais compat&#xED;veis pode ser encontrado na p&#xE1;gina <a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a>.</p>
+<h2 id="configura&#xE7;&#xF5;es-iniciais">Configura&#xE7;&#xF5;es iniciais</h2>
+<p>Ap&#xF3;s instalar o Git, a primeira coisa a ser feita &#xE9; configurar o nome de usu&#xE1;rio &#x2014; para isso, basta utilizar o comando <code>git config --global user.name &quot;Fulano de Tal&quot;</code>, lembre-se de editar o comando com o nome de usu&#xE1;rio desejado &#x2014;  e o endere&#xE7;o de e-mail &#x2014; para isso, basta utilizar o comando <code>git config --global user.email fulanodetal@exemplo.br</code>, lembre-se de editar o comando com o email do usu&#xE1;rio desejado. Essas informa&#xE7;&#xF5;es s&#xE3;o importantes porque ficar&#xE3;o carimbadas de forma imut&#xE1;vel nos <em>commits</em> criados.</p>
+<p>Para conferir se o nome e o e-mail foram configurados corretamente, basta utilizar, respectivamente, os comandos: <code>git config user.name</code> e <code>git config user.email</code>.</p>
+<h2 id="obtendo-um-reposit&#xF3;rio">Obtendo um reposit&#xF3;rio</h2>
+<p>H&#xE1; duas formas de come&#xE7;ar a trabalhar em um projeto com o Git. A primeira, &#xE9; fazendo um <em>clone</em> &#x2014;  a&#xE7;&#xE3;o de copiar um projeto de algum reposit&#xF3;rio principal para o computador do desenvolvedor. O comando <code>git clone</code>, acompanhado do endere&#xE7;o do reposit&#xF3;rio principal, &#xE9; o respons&#xE1;vel por efetuar um <em>clone</em>. </p>
+<p> J&#xE1; a segunda, &#xE9; transformar um diret&#xF3;rio local que n&#xE3;o est&#xE1; sob controle de vers&#xE3;o em um reposit&#xF3;rio Git. Para isso, &#xE9; preciso: </p>
+<ol>
+<li>Entrar no diret&#xF3;rio que se deseja versionar;</li>
+<li>Executar o comando  <code>git init</code> &#x2014; ele criar&#xE1; um subdiret&#xF3;rio chamado <code>.git</code> que cont&#xE9;m todos os arquivos necess&#xE1;rios para a cria&#xE7;&#xE3;o do reposit&#xF3;rio local;</li>
+<li>Indicar para o Git que ele pode cuidar de todos os arquivos presentes no diret&#xF3;rio com o comando <code>git add .</code>&#x2014; &#xE9; necess&#xE1;rio que o diret&#xF3;rio contenha, no m&#xED;nimo, um arquivo; </li>
+<li>Enviar o arquivo para o reposit&#xF3;rio local por meio do comando <code>git commit -m &quot;primeiro commit&quot;</code> &#x2014; dentro das aspas &#xE9; colocada uma mensagem que permite identificar facilmente o <em>commit</em>.</li>
+<li>Criar a <em>branch</em> principal do projeto. Uma <em>branch</em> &#xE9; uma linha cronol&#xF3;gica que organiza os <em>commits</em> &#x2014;  todo reposit&#xF3;rio precisa de no m&#xED;nimo uma <em>branch</em> que &#xE9; a principal. Por padr&#xE3;o a <em>branch</em> principal &#xE9; chamada de <em>main</em>. A cria&#xE7;&#xE3;o dela &#xE9; feita pela execu&#xE7;&#xE3;o do comando <code>git branch -M main</code>.</li>
+</ol>
+<p>Agora &#xE9; preciso enviar os arquivos guardados no reposit&#xF3;rio local para um reposit&#xF3;rio remoto, ou seja, para o reposit&#xF3;rio principal. Para isso &#xE9; preciso:</p>
+<ol>
+<li>Criar o reposit&#xF3;rio principal no servidor remoto;</li>
+<li>Sincronizar o reposit&#xF3;rio local com o remoto com o comando <code>git remote add origin</code>, seguido do endere&#xE7;o do reposit&#xF3;rio principal;</li>
+<li>Enviar a <em>branch</em> principal, com o <em>commit</em> feito anteriormente, para o reposit&#xF3;rio principal. O comando que faz essa tarefa &#xE9; o <code>git push -u origin main</code>.</li>
+</ol>
+<p>Devido a complexidade de come&#xE7;ar a trabalhar em um projeto Git pela segunda forma &#xE9; comum, neste momento, n&#xE3;o entender todos os conceitos. N&#xE3;o precisa se preocupar, eles ser&#xE3;o revisitados e melhor explicados nas pr&#xF3;ximas se&#xE7;&#xF5;es. No momento, o mais importante &#xE9; perceber que &#xE9; mais simples o desenvolvedor criar o reposit&#xF3;rio principal no servidor remoto e em seguida clon&#xE1;-lo para sua m&#xE1;quina.</p>
+<h2 id="grava&#xE7;&#xF5;es-de-altera&#xE7;&#xF5;es-nos-reposit&#xF3;rios">Grava&#xE7;&#xF5;es de altera&#xE7;&#xF5;es nos reposit&#xF3;rios</h2>
+<p>Como explicado na se&#xE7;&#xE3;o &quot;Tipos de <em>VCS</em>&quot; um <em>DVCS</em> &#xE9; constitu&#xED;do por  tr&#xEA;s partes: a &#xE1;rea de trabalho, o reposit&#xF3;rio local e o reposit&#xF3;rio principal. No Git, os arquivos presentes na &#xE1;rea de trabalho podem est&#xE1; em um dos seguintes estados:</p>
+<ul>
+<li>N&#xE3;o rastreados: Arquivos que n&#xE3;o possuem nenhum <em>snapshots</em>, ou seja, nunca tiveram algum estado registrados pelo Git ou salvo em um dos reposit&#xF3;rios;</li>
+<li><p>Rastreados: Arquivos que o Git conhece, ou seja, que tiveram seu &#xFA;ltimo <em>snapshots</em> registrado pelo Git ou salvo em algum dos reposit&#xF3;rios.</p>
+<p>&#xC9; poss&#xED;vel visualizar o estado dos arquivos que est&#xE3;o na &#xE1;rea de trabalho utilizando o comando <code>git status</code>. </p>
+</li>
+</ul>
+<p>Para come&#xE7;ar a rastrear um novo arquivo, deve-se usar o comando <code>git add</code> seguido pelo nome do arquivo que se deseja rastrear. Na se&#xE7;&#xE3;o anterior foi mostrado comando <code>git add .</code>, ele faz com que todos os arquivos da &#xE1;rea de trabalho sejam rastreados &#x2014;  o comando <code>git add *</code> tamb&#xE9;m tem a mesma finalidade.  </p>
+<p>Caso tenha se arrependido de ter adicionado algum arquivo, basta utilizar o comando <code>git reset</code> seguido pelo nome do arquivo. Quando o nome n&#xE3;o &#xE9; informado, todos os arquivos adicionados voltar&#xE3;o a ser n&#xE3;o rastreados &#x2014; lembre-se que esse comando n&#xE3;o descarta os arquivos ou as informa&#xE7;&#xF5;es contidas nele.</p>
+<p>O <code>git add</code> tamb&#xE9;m serve para selecionar os arquivos que entrar&#xE3;o na &#xE1;rea de <em>stage</em>, &#xE9; nela que ficam todos os arquivos que ir&#xE3;o constituir um <em>commit</em>.  Ap&#xF3;s selecionar os arquivos, chega o momento de <em>commitar</em>, ou seja, enviar os arquivos selecionados para o reposit&#xF3;rio local. Para isso, basta executar o comando <code>git commit -m &quot;Nome do commit&quot;</code> &#x2014; dentro das aspas &#xE9; colocada uma mensagem que permite identificar facilmente o <em>commit</em>. </p>
+<p>H&#xE1; momentos em que um <em>commit</em> precisa ser desfeito, existem diferentes formas de atingir esse objetivo, veja:</p>
+<ul>
+<li>Para resetar o reposit&#xF3;rio local para o &#xFA;ltimo <em>commit</em> sem altera os arquivos, apenas o <em>commit</em>, o comando utilizado &#xE9; o <code>git reset</code> &#x2014; para fazer a mesma a&#xE7;&#xE3;o descartando os arquivos o comando &#xE9; o <code>git reset --hard</code>. </li>
+<li>Para resetar o reposit&#xF3;rio local para o <em>commit</em> anterior sem altera os arquivos, apenas o <em>commit</em>, o comando utilizado &#xE9; o <code>git reset HARD~1</code> &#x2014; para fazer a mesma a&#xE7;&#xE3;o descartando os arquivos o comando &#xE9; o <code>git reset --hard HEAD~1</code>. </li>
+<li>Para resetar o reposit&#xF3;rio local para um <em>commit</em> espec&#xED;fico sem descartar as altera&#xE7;&#xF5;es feitas, &#xE9; preciso utilizar o comando utilizado &#xE9; o <code>git reset</code> com o c&#xF3;digo identificador do <em>commit</em> &#x2014; para ver o c&#xF3;digo dos <em>commits</em> basta utilizar o comando <code>git log --oneline</code>. Para fazer a mesma a&#xE7;&#xE3;o descartando os arquivos o comando &#xE9; o <code>git reset --hard</code> com o c&#xF3;digo identificador do <em>commit</em>.</li>
+</ul>
+<p>Outro cen&#xE1;rio comum &#xE9; quando se deseja fazer o <em>update</em> da &#xE1;rea de trabalho, ou seja, quando j&#xE1; existe algum <em>commit</em> do arquivo e o mesmo sofreu altera&#xE7;&#xF5;es que est&#xE3;o somente na &#xE1;rea de trabalho, mas h&#xE1; necessidade de descart&#xE1;-las para ter na &#xE1;rea de trabalho o arquivo fidedigno ao &#xFA;ltimo <em>commit</em>. Nesses casos, utiliza-se o comando <code>git checkout</code> seguido pelo nome do arquivo &#x2014; caso queira descartar as altera&#xE7;&#xF5;es feitas em todo os arquivos basta utilizar <code>git checkout *</code>.</p>
+<p>Se n&#xE3;o houver problemas  com o <em>commit</em> &#xE9; poss&#xED;vel envi&#xE1;-lo para o reposit&#xF3;rio principal com o comando <code>git push</code> &#x2014; o Git permite acumular <em>commits</em> no reposit&#xF3;rio local e utilizar o <code>git push</code> para submeter todos de uma s&#xF3; vez. </p>
+<p>O processo para desfazer um <em>commit</em> que est&#xE1; no reposit&#xF3;rio principal &#xE9; semelhante ao utilizado para restaurar um <em>commit</em> local descartando os arquivos. O primeiro passo &#xE9; executar o  comando <code>git reset --hard</code> com o c&#xF3;digo identificador do <em>commit</em>. Em seguida, utiliza-se o comando <code>git push --force</code> para for&#xE7;ar o <em>push</em> que descartar&#xE1; os <em>commits</em> posteriores ao indicado no comando.</p>
+<p>Para atualizar o reposit&#xF3;rio local com os arquivos do reposit&#xF3;rio remoto basta executar o comando <code>git pull</code>. Para que ele funcione &#xE9; preciso que tanto a &#xE1;rea de trabalho quanto o reposit&#xF3;rio local n&#xE3;o tenha nenhuma altera&#xE7;&#xE3;o que precise ser enviada.</p>
+<p>Mover ou excluir um arquivo rastreado do diret&#xF3;rio tamb&#xE9;m  n&#xE3;o &#xE9; uma tarefa complexa. Para mover o comando utilizado &#xE9; o<code>git mv</code> sucedido pelo nome caminho para o arquivo de origem e o caminho para o diret&#xF3;rio de destino. J&#xE1; para excluir o comando utilizado &#xE9; o<code>git rm</code>sucedido pelo nome do arquivo que ser&#xE1; descartado.</p>
+<h2 id="utilizando-branchs">Utilizando branchs</h2>
+<p>Todo reposit&#xF3;rio tem que ter no m&#xED;nimo uma <em>branch</em>, a principal &#x2014; por padr&#xE3;o chamada de <em>main</em>. <em>Branch</em> &#xE9; uma linha cronol&#xF3;gica que organiza os <em>commits</em>.</p>
+<p>N&#xE3;o inserir <em>commits</em> diretamente <em>main</em> &#xE9; uma boa pr&#xE1;tica adotada mundialmente. Normalmente, os desenvolvedores codificam de forma isolada. Para isso, eles ramificam a <em>main</em>, ou seja, cada um bifurca a <em>branch</em> principal para que suas implementa&#xE7;&#xF5;es sejam feitas em uma <em>branch</em> particular, que n&#xE3;o interfere no trabalho feito pelos outros desenvolvedores. </p>
+<p>O comando <code>git checkout -b</code> sucedido por um nome, cria uma <em>branch</em> com o nome informado no reposit&#xF3;rio local. Para cri&#xE1;-la no reposit&#xF3;rio principal, basta executar <code>git push origin</code> seguido pelo nome da <em>branch</em> criada com o comando anterior.</p>
+<p>O Git tamb&#xE9;m permite navegar facilmente entre as <em>branchs</em> j&#xE1; criadas. O comando comando <code>git checkout</code> acompanhado pelo nome de uma <em>branch</em> altera o conte&#xFA;do da &#xE1;rea de trabalho do desenvolvedor para o conte&#xFA;do guardado pela <em>branch</em> selecionada.</p>
+<p>Seguindo a boa pr&#xE1;tica, a <em>main</em> s&#xF3; recebe <em>commits</em> por meio de <em>merge</em>. O <em>merge</em> ocorre quando o desenvolvedor est&#xE1; seguro que as implementa&#xE7;&#xF5;es feitas por ele podem ser mescladas com as implementa&#xE7;&#xF5;es presentes na <em>main</em>.</p>
+<p>Para efetuar o <em>merge</em>, o desenvolvedor deve entrar na <em>main</em> e executar o comando <code>gir merge</code>, seguido pelo nome da <em>branch</em> que tem o c&#xF3;digo que o desenvolvedor deseja trazes para a <em>main</em>. Essa l&#xF3;gica pode ser aplicada para fazer o <em>merge</em> entre qualquer <em>branch</em>.</p>
+<h2 id="criando-tags">Criando tags</h2>
+<p>O Git tem a habilidade de marcar pontos espec&#xED;ficos na hist&#xF3;ria como sendo importantes.Existem dois tipos de tag, s&#xE3;o elas: </p>
+<ul>
+<li>Tag leve: Apenas aponta para um <em>commit</em> em especifico. &#xC9; utilizada para destacar <em>commits</em>;</li>
+<li>Tag anotada: Armazenam detalhes sobre o estado do reposit&#xF3;rio naquele momento. &#xC9; utilizada para identificar <em>releases</em> &#x2014; quando um recurso ou conjunto deles se torna dispon&#xED;vel para todos ou alguns clientes.</li>
+</ul>
+<p>Para criar uma tag leve basta utilizar o comando <code>git tag -a v1.0</code> &#x2014;  lembre-se de editar o comando com o n&#xFA;mero da vers&#xE3;o. J&#xE1; para criar uma tag anotada, utiliza-se o comando <code>git tag -a v1.0 -m &quot;primeira release&quot;</code> &#x2014;  lembre-se de editar o comando com o n&#xFA;mero da vers&#xE3;o e uma mensagem, respectivamente. Os dois comandos mostrados, criam tags apenas no reposit&#xF3;rio local. O comando utilizado para envi&#xE1;-las ao reposit&#xF3;rio principal  &#xE9; o <code>git push origin</code> seguido pelo nome da tag que  deseja enviar.</p>
+<p>Para listar todas as tags do reposit&#xF3;rio basta utilizar o comando <code>git tag</code>. Por&#xE9;m, se o desejo &#xE9; visualizar informa&#xE7;&#xF5;es de um tag, basta utilizar o comando <code>git tag show</code> seguido pelo nome da tag que deseja ver as informa&#xE7;&#xF5;es.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="introducao.html" class="navigation navigation-prev " aria-label="Previous page: Introdução">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="glossario.html" class="navigation navigation-next " aria-label="Next page: Glossário">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Git","level":"1.3","depth":1,"next":{"title":"Glossário","level":"1.4","depth":1,"path":"glossario.md","ref":"glossario.md","articles":[]},"previous":{"title":"Introdução","level":"1.2","depth":1,"path":"introducao.md","ref":"introducao.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","github","sharing-plus","back-to-top-button","download-pdf-link"],"root":"./pages","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/GeovanneAtanazio/manual_linux/"},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"sepia","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"download-pdf-link":{"label":"Download PDF","base":"https://github.com/GeovanneAtanazio/manual_linux/blob/main/Manual_Versionamento_Codigo.pdf"},"sharing":{"qq":false,"all":["twitter","linkedin","whatsapp","facebook","messenger"],"douban":false,"facebook":false,"weibo":false,"whatsapp":false,"line":false,"google":false,"qzone":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"apresentacao.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"cover":"images/cover.jpg","title":"Manual GNU/Linux","language":"pt","gitbook":"*","description":"Manual com o conhecimento institucional de GNU/Linux"},"file":{"path":"git.md","mtime":"2021-08-23T03:29:10.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-23T04:18:09.708Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-download-pdf-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
