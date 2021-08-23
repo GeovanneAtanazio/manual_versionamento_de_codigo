@@ -11,7 +11,7 @@
   "plugins":["-sharing","github","sharing-plus","back-to-top-button","download-pdf-link"],
   "pluginsConfig": {
     "download-pdf-link": {
-      "base": "https://github.com/GeovanneAtanazio/manual_linux/blob/main/Manual_Versionamento_Codigo.pdf"
+      "base": "https://github.com/GeovanneAtanazio/manual_versionamento_de_codigo/blob/main/Manual_Versionamento_Codigo.pdf"
       },
     "fontsettings": {
       "theme": "sepia"
