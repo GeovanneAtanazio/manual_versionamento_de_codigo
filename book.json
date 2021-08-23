@@ -1,0 +1,34 @@
+{
+  "root": "./pages",
+  "title": "Manual GNU/Linux",
+  "cover":"images/cover.jpg",
+  "description": "Manual com o conhecimento institucional de GNU/Linux", 
+  "language": "pt",
+  "structure": {
+    "readme": "apresentacao.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins":["-sharing","github","sharing-plus","back-to-top-button","download-pdf-link"],
+  "pluginsConfig": {
+    "download-pdf-link": {
+      "base": "https://github.com/GeovanneAtanazio/manual_linux/blob/main/Manual_Versionamento_Codigo.pdf"
+      },
+    "fontsettings": {
+      "theme": "sepia"
+    },
+    "sharing": {
+      "douban":false,
+      "facebook":false,
+      "google":false,
+      "line":false,
+      "qq":false,
+      "qzone":false,
+      "weibo":false,
+      "whatsapp":false,
+      "all": ["twitter","linkedin","whatsapp","facebook","messenger"]
+    },
+    "github":{
+      "url": "https://github.com/GeovanneAtanazio/manual_linux/"
+    }
+  }
+}
