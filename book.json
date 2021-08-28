@@ -1,8 +1,8 @@
 {
   "root": "./pages",
-  "title": "Manual GNU/Linux",
+  "title": "Manual de versionamento de código",
   "cover":"images/cover.jpg",
-  "description": "Manual com o conhecimento institucional de GNU/Linux", 
+  "description": "Manual com o conhecimento institucional de versionamento de código", 
   "language": "pt",
   "structure": {
     "readme": "apresentacao.md",
