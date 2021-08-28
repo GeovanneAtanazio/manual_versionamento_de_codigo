@@ -10,7 +10,9 @@ O Git está disponível para os três principais sistemas operacionais utilizado
 
 Após instalar o Git, a primeira coisa a ser feita é configurar o nome de usuário — para isso, basta utilizar o comando `git config --global user.name "Fulano de Tal"`, lembre-se de editar o comando com o nome de usuário desejado —  e o endereço de e-mail — para isso, basta utilizar o comando `git config --global user.email fulanodetal@exemplo.br`, lembre-se de editar o comando com o email do usuário desejado. Essas informações são importantes porque ficarão carimbadas de forma imutável nos *commits* criados.
 
-Para conferir se o nome e o e-mail foram configurados corretamente, basta utilizar, respectivamente, os comandos: `git config user.name` e `git config user.email`.
+Para conferir se o nome e o e-mail foram configurados corretamente, basta utilizar, respectivamente, os comandos: `console
+git config user.name` e `console
+git config user.email`.
 
 ## Obtendo um repositório
 
@@ -32,7 +34,7 @@ Agora é preciso enviar os arquivos guardados no repositório local para um repo
 
 Devido a complexidade de começar a trabalhar em um projeto Git pela segunda forma é comum, neste momento, não entender todos os conceitos. Não precisa se preocupar, eles serão revisitados e melhor explicados nas próximas seções. No momento, o mais importante é perceber que é mais simples o desenvolvedor criar o repositório principal no servidor remoto e em seguida cloná-lo para sua máquina.
 
-## Gravações de alterações nos repositórios
+## Gravações e remoções de alterações nos repositórios
 
 Como explicado na seção "Tipos de *VCS*" um *DVCS* é constituído por  três partes: a área de trabalho, o repositório local e o repositório principal. No Git, os arquivos presentes na área de trabalho podem está em um dos seguintes estados:
 
@@ -67,15 +69,17 @@ Mover ou excluir um arquivo rastreado do diretório também  não é uma tarefa 
 
 Todo repositório tem que ter no mínimo uma *branch*, a principal — por padrão chamada de *main*. *Branch* é uma linha cronológica que organiza os *commits*.
 
-Não inserir *commits* diretamente *main* é uma boa prática adotada mundialmente. Normalmente, os desenvolvedores codificam de forma isolada. Para isso, eles ramificam a *main*, ou seja, cada um bifurca a *branch* principal para que suas implementações sejam feitas em uma *branch* particular, que não interfere no trabalho feito pelos outros desenvolvedores. 
+Não inserir *commits* diretamente *main* é uma boa prática adotada mundialmente. Normalmente, os desenvolvedores codificam de forma isolada. Para isso, eles ramificam a *main*, ou seja, cada um bifurca a *branch* principal para que o código desenvolvido seja feito em uma *branch* particular, que não interfere no trabalho feito pelos outros desenvolvedores. 
 
 O comando `git checkout -b` sucedido por um nome, cria uma *branch* com o nome informado no repositório local. Para criá-la no repositório principal, basta executar `git push origin` seguido pelo nome da *branch* criada com o comando anterior.
 
 O Git também permite navegar facilmente entre as *branchs* já criadas. O comando comando `git checkout` acompanhado pelo nome de uma *branch* altera o conteúdo da área de trabalho do desenvolvedor para o conteúdo guardado pela *branch* selecionada.
 
-Seguindo a boa prática, a *main* só recebe *commits* por meio de *merge*. O *merge* ocorre quando o desenvolvedor está seguro que as implementações feitas por ele podem ser mescladas com as implementações presentes na *main*.
+Seguindo a boa prática, a *main* só recebe *commits* por meio de *merge*. O *merge* ocorre quando o desenvolvedor está seguro que o código feito por ele pode ser mescladas com o código presentes na *main*.
 
-Para efetuar o *merge*, o desenvolvedor deve entrar na *main* e executar o comando `gir merge`, seguido pelo nome da *branch* que tem o código que o desenvolvedor deseja trazes para a *main*. Essa lógica pode ser aplicada para fazer o *merge* entre qualquer *branch*.
+Para efetuar o *merge*, o desenvolvedor deve entrar na *main* e executar o comando `git merge`, seguido pelo nome da *branch* que tem o código que o desenvolvedor deseja trazes para a *main*. Essa lógica pode ser aplicada para fazer o *merge* entre qualquer *branch*.
+
+O comando `git merge` atua apenas no repositório local. Para enviar o *merge* para um repositório  principal é preciso rodar o comando `git push`.
 
 ## Criando tags
 
