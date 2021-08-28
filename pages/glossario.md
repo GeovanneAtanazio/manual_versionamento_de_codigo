@@ -17,5 +17,5 @@ Esta seção apresenta um glossário com as palavras-chaves presentes neste manu
 |*Continuous Delivery*(*CD*)|Refere-se à entrega contínua, é quando as mudanças feitas pelo desenvolvedor em uma aplicação, são automaticamente testadas contra bugs e podem ser carregadas no ambiente de produção a partir de um comando.|
 |*Continuous Deployment*(*CD*)|Refere-se à implantação contínua, é quando o processo de *Continuous Delivery*(*CD*) não precisa de um comando para entrar no ambiente de produção.|
 |*Release*|No contexto de desenvolvimento, é quando um recurso ou conjunto de recursos se torna disponível para todos os clientes ou para um segmento deles. No contexto do Git-Flow, é uma das *branch* secundária.|
-|Ambiente de homologação|Servidor utilizado pela equipe de desenvolvimento para validar uma *release*.|
-|Ambiente de produção|Servidor utilizado pelos usuários finais para acessar a aplicação.|
+|Ambiente de Homologação|Servidor utilizado pela equipe de desenvolvimento para validar uma *release*.|
+|Ambiente de Produção|Servidor utilizado pelos usuários finais para acessar a aplicação.|
