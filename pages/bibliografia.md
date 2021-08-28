@@ -47,7 +47,7 @@ Esta seção apresenta o conjunto das fontes efetivamente utilizadas na constru�
 - Adicionar um projeto existente ao GitHub usando a linha de comando. **GitHub**.Disponível em: <https://docs.github.com/pt/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line>. Acesso em: 16 de ago. de 2021.
 - O que é um servidor em computação?. **ControleNet**. Disponível em: <https://www.controle.net/faq/o-que-sao-servidores>. Acesso em: 16 de ago. de 2021.
 
-### Gravações de alterações nos repositórios
+### Gravações e remoções de alterações nos repositórios
 
 - Gravando Alterações em Seu Repositório. **Git**. Disponível em: <https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Alterações-em-Seu-Repositório>. Acesso em: 21 de ago. de 2021.
 - Git, desfazendo commits. **Bruno Orlandi**. <https://stackoverflow.com/questions/3293531/how-to-permanently-remove-few-commits-from-remote-branch>. Acesso em 21 de ago. de 2021.
@@ -62,3 +62,50 @@ Esta seção apresenta o conjunto das fontes efetivamente utilizadas na constru�
 
 - Criando Tags. **Git**. Disponível em: <https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Criando-Tags>. Acesso em: 22 de ago. de 2021.
 - Git: criando tags. **Medium**. Disponível em: <https://medium.com/rafaeltardivo/git-criando-tags-7c34ee6786be>. Acesso em: 22 de ago. de 2021.
+
+### Visualizar os *logs*
+
+- REPRISE - PRIMEIRA AULA PARA A CERTIFICAÇÃO OFICIAL DO GITLAB. **LinuxTips**. Disponível em: <https://www.youtube.com/watch?v=SMzaAP09BD4>. Acesso em: 28 de ago. de 2021.
+- Significado de Log. **Dicio** Disponível em: <https://www.dicio.com.br/log-2/>. Acesso em: 28 de ago. de 2021.
+
+## O que é Git-Flow
+
+- Fluxo de trabalho de Gitflow. **Atlassian**. Disponível em: <https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow>. Acesso em: 24 de ago. 2021.
+- A successful Git branching model. **nvie.com**. Disponível em: <https://nvie.com/posts/a-successful-git-branching-model/>. Acesso em: 24 de ago. 2021.
+- Git Flow // Dicionário do Programador. **Código Fonte TV**. Disponível em: <https://www.youtube.com/watch?v=oweffeS8TRc>. Acesso em: 24 de ago. 2021.
+- O que é workflow e como aplicar no seu negócio. **rockcontent**. Disponível em: <https://rockcontent.com/br/blog/workflow/>. Acesso em: 24 de ago. 2021.
+- Integração e entrega contínuas: pipeline CI/CD. **Red Hat**. Disponível em: <https://www.redhat.com/pt-br/topics/devops/what-is-ci-cd>. Acesso em: 24 de ago. 2021.
+
+### Como funciona
+
+- Fluxo de trabalho de Gitflow. **Atlassian**. Disponível em: <https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow>. Acesso em: 24 de ago. 2021.
+- Utilizando o fluxo Git Flow. **Medium**. Disponível em: <https://medium.com/trainingcenter/utilizando-o-fluxo-git-flow-e63d5e0d5e04>. Acesso em: 28 de ago. 2021.
+- Gitflow: entenda quando e como você deve utilizar. **Lumis**. Disponível em: <https://www.lumis.com.br/a-lumis/blog/gitflow-entenda-quando-e-como-voce-deve-utilizar.htm>. Acesso em: 28 de ago. 2021.
+
+#### *main*
+
+- Fluxo de trabalho de Gitflow. **Atlassian**. Disponível em: <https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow>. Acesso em: 24 de ago. 2021.
+
+#### *develop*
+
+- Fluxo de trabalho de Gitflow. **Atlassian**. Disponível em: <https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow>. Acesso em: 24 de ago. 2021.
+
+#### *feature*
+
+- Fluxo de trabalho de Gitflow. **Atlassian**. Disponível em: <https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow>. Acesso em: 24 de ago. 2021.
+
+#### *release*
+
+- Fluxo de trabalho de Gitflow. **Atlassian**. Disponível em: <https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow>. Acesso em: 24 de ago. 2021.
+
+#### *hotfix*
+
+- Fluxo de trabalho de Gitflow. **Atlassian**. Disponível em: <https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow>. Acesso em: 24 de ago. 2021.
+
+#### *bugfix*
+
+- Gitflow: qual a diferença entre “hotfix” e “bugfix”. **Medium**. Disponível em: <https://medium.com/@echegorri.rodrigo/gitflow-qual-a-diferença-entre-hotfix-e-bugfix-5f5d6ac4ff18>. Acesso em: 28 de ago. de 2021.
+
+#### *support*
+
+- GitFlow Examples. **GitVersion**. Disponível em: <https://gitversion.net/docs/learn/branching-strategies/gitflow/examples>. Acesso em: 28 de ago. 2021

@@ -92,3 +92,6 @@ Para criar uma tag leve basta utilizar o comando `git tag -a v1.0` —  lembre-s
 
 Para listar todas as tags do repositório basta utilizar o comando `git tag`. Porém, se o desejo é visualizar informações de um tag, basta utilizar o comando `git tag show` seguido pelo nome da tag que deseja ver as informações.
 
+## Visualizar os *logs*
+
+O Git possui um registro de *logs*. Para visualizar basta utilizar o comando `git log` — se preferir uma visualização mais resumida, utilize o comando `git log --oneline`. 
