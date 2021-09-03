@@ -50,9 +50,10 @@ Esta seção apresenta o conjunto das fontes efetivamente utilizadas na constru�
 ### Gravações e remoções de alterações nos repositórios
 
 - Gravando Alterações em Seu Repositório. **Git**. Disponível em: <https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Alterações-em-Seu-Repositório>. Acesso em: 21 de ago. de 2021.
-- Git, desfazendo commits. **Bruno Orlandi**. <https://stackoverflow.com/questions/3293531/how-to-permanently-remove-few-commits-from-remote-branch>. Acesso em 21 de ago. de 2021.
+- Git, desfazendo commits. **Bruno Orlandi**. Disponível em: <https://stackoverflow.com/questions/3293531/how-to-permanently-remove-few-commits-from-remote-branch>. Acesso em 21 de ago. de 2021.
 - How to permanently remove few commits from remote branch. **StackOverflow**. Disponível em: <https://stackoverflow.com/questions/3293531/how-to-permanently-remove-few-commits-from-remote-branch>. Acesso em: 21 de ago. de 2021.
 - REPRISE - PRIMEIRA AULA PARA A CERTIFICAÇÃO OFICIAL DO GITLAB. **LinuxTips**. Disponível em: <https://www.youtube.com/watch?v=SMzaAP09BD4>. Acesso em: 21 de ago. de 2021.
+- Resolver um conflito de merge usando a linha de comando. **GitHub**. Disponível em: <https://docs.github.com/pt/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line>. Acesso em: 03 de set. de 2021.
 
 ### Utilizando branchs
 

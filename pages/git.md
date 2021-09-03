@@ -61,7 +61,7 @@ Se não houver problemas  com o *commit* é possível enviá-lo para o repositó
 
 O processo para desfazer um *commit* que está no repositório principal é semelhante ao utilizado para restaurar um *commit* local descartando os arquivos. O primeiro passo é executar o  comando `git reset --hard` com o código identificador do *commit*. Em seguida, utiliza-se o comando `git push --force` para forçar o *push* que descartará os *commits* posteriores ao indicado no comando.
 
-Para atualizar o repositório local com os arquivos do repositório remoto basta executar o comando `git pull`. Para que ele funcione é preciso que tanto a área de trabalho quanto o repositório local não tenha nenhuma alteração que precise ser enviada.
+Para atualizar o repositório local com os arquivos do repositório remoto basta executar o comando `git pull`. Esse comando, no Git, além de fazer o *push*, também faz o *update* da área de trabalho. Por isso, para que ele funcione, é preciso que tanto na área de trabalho quanto no repositório local não exista nenhuma alteração conflitante com o código recebido via *pull* — caso exista, o Git indicará no arquivo os trechos conflitantes para que o desenvolvedor possa escolher qual código deve ser mantido e, em seguida, efetuar o *commit* da versão escolhida.
 
 Mover ou excluir um arquivo rastreado do diretório também  não é uma tarefa complexa. Para mover o comando utilizado é o`git mv` sucedido pelo nome caminho para o arquivo de origem e o caminho para o diretório de destino. Já para excluir o comando utilizado é o`git rm`sucedido pelo nome do arquivo que será descartado.
 
