@@ -73,13 +73,17 @@ Não inserir *commits* diretamente *main* é uma boa prática adotada mundialmen
 
 O comando `git checkout -b` sucedido por um nome, cria uma *branch* com o nome informado no repositório local. Para criá-la no repositório principal, basta executar `git push origin` seguido pelo nome da *branch* criada com o comando anterior.
 
-O Git também permite navegar facilmente entre as *branchs* já criadas. O comando comando `git checkout` acompanhado pelo nome de uma *branch* altera o conteúdo da área de trabalho do desenvolvedor para o conteúdo guardado pela *branch* selecionada.
+O Git também permite navegar facilmente entre as *branchs* já criadas. O comando `git checkout` acompanhado pelo nome de uma *branch* altera o conteúdo da área de trabalho do desenvolvedor para o conteúdo guardado pela *branch* selecionada.
 
-Seguindo a boa prática, a *main* só recebe *commits* por meio de *merge*. O *merge* ocorre quando o desenvolvedor está seguro que o código feito por ele pode ser mescladas com o código presentes na *main*.
+Seguindo a boa prática, a *main* só recebe *commits* por meio de *merge*. O *merge* ocorre quando o desenvolvedor está seguro que o código feito por ele pode ser mesclado, neste caso, com o código presente na *main*.
 
-Para efetuar o *merge*, o desenvolvedor deve entrar na *main* e executar o comando `git merge`, seguido pelo nome da *branch* que tem o código que o desenvolvedor deseja trazes para a *main*. Essa lógica pode ser aplicada para fazer o *merge* entre qualquer *branch*.
+Para efetuar o *merge*, o desenvolvedor deve entrar na *main* e executar o comando `git merge`, seguido pelo nome da *branch* que tem o código que o desenvolvedor deseja trazes para a *main*. Essa lógica pode ser aplicada para fazer o *merge* entre quaisquer *branchs*.
 
-O comando `git merge` atua apenas no repositório local. Para enviar o *merge* para um repositório  principal é preciso rodar o comando `git push`.
+O comando `git merge` atua apenas no repositório local. Para enviar o *merge* no repositório  principal é preciso rodar o comando `git push`.
+
+É muito comum excluir a *branch* que teve seu código enviado para outra por meio do *merge*. Geralmente, essa exclusão é feita na interface gráfica do repositório principal. Porém, para excluir ela no répositório local é preciso utilizar o comando `git branch -D` seguido pelo nome da *branch* que deseja excluir.
+
+Outro recurso bastante utíl relacionado as *branchs* é o de visualizá-las. Para listar as *branchs* do repositório local é preciso utilizar o comando `git branch`. Caso precise listar as *branchs* do repositório principal, utiliza-se  o comando `git branch -r`. Se o desejo for listar todas as *branchs*, tanto repositório local qunto do remoto, o comando é `git branch -a`.
 
 ## Criando tags
 
