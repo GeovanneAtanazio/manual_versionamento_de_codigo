@@ -8,7 +8,7 @@
     "readme": "apresentacao.md",
     "summary": "SUMMARY.md"
   },
-  "plugins":["-sharing","github","sharing-plus","back-to-top-button","download-pdf-link"],
+  "plugins":["-sharing","github","sharing-plus","back-to-top-button","download-pdf-link","-search", "search-plus","fontsettings"],
   "pluginsConfig": {
     "download-pdf-link": {
       "base": "https://github.com/GeovanneAtanazio/manual_versionamento_de_codigo/blob/main/Manual_Versionamento_Codigo.pdf"
