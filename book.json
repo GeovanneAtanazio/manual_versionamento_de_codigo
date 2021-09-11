@@ -8,7 +8,8 @@
     "readme": "apresentacao.md",
     "summary": "SUMMARY.md"
   },
-  "plugins":["-sharing","github","sharing-plus","back-to-top-button","download-pdf-link","-search", "search-plus","fontsettings"],
+  "plugins":["-sharing","-lunr","github","sharing-plus","download-pdf-link","-search", "search-pro","fontsettings"
+              ,"mermaid-gb3","splitter","anchor-navigation-ex","code","tbfed-pagefooter"],
   "pluginsConfig": {
     "download-pdf-link": {
       "base": "https://github.com/GeovanneAtanazio/manual_versionamento_de_codigo/blob/main/Manual_Versionamento_Codigo.pdf"
@@ -25,10 +26,15 @@
       "qzone":false,
       "weibo":false,
       "whatsapp":false,
-      "all": ["twitter","linkedin","whatsapp","facebook","messenger"]
+      "all": ["twitter","linkedin","whatsapp","facebook"]
     },
     "github":{
       "url": "https://github.com/GeovanneAtanazio/manual_versionamento_de_codigo"
+    },
+    "tbfed-pagefooter": {
+      "copyright":"Copyright &copy 2021 Geovanne Atanazio",
+      "modify_label": "Arquivo revisado pela última vez em",
+      "modify_format": "DD/MM/YYYY"
     }
   }
 }
